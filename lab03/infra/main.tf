@@ -15,4 +15,10 @@ module "vm" {
 
   name_prefix = var.name_prefix
   subnet_id = module.network.subnet_id
+  enable_public_ip = false
+}
+
+output "pass" {
+  value = module.vm.pass
+  sensitive = true
 }
