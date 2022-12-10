@@ -3,7 +3,7 @@
 set -e
 [[ "${DEBUG}" ]] && set -x
 
-export PROJECT_NAME="wg"
+export PROJECT_NAME="tvv"
 export ENVIRONMENT="dev"
 export LOCATION="westeurope"
 export LOCATION_SHORT="weu"
