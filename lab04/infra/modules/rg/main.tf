@@ -6,4 +6,8 @@ resource "azurerm_resource_group" "rg" {
   tags = {
     environment = var.environment
   }
+
+  lifecycle {
+    ignore_changes = [ tags, ]
+  }
 }
